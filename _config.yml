@@ -3,6 +3,7 @@ description: =.=
 
 url: https://github.com/wlj459
 baseurl: ""
+BASE_PATH:/neko-neko-cion-
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
@@ -19,9 +20,7 @@ navigation:
    url: /contact.html
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
+   github: wlj459
+   email: wlj459@gmail.com
 
-google_analytics: "UA-58263416-1"
+google_analytics: ""
