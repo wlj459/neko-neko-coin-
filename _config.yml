@@ -3,7 +3,7 @@ description: =.=
 
 url: https://wlj459.github.io
 baseurl: ""
-BASE_PATH:/neko-neko-cion-
+BASE_PATH: /neko-neko-cion-
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
