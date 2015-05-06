@@ -9,7 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <title>终于改完了</title>
+    <title>jekyll安装教程【笔记】</title>
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico" />
@@ -20,7 +20,7 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/assets/css/style.css">
     <!--[if IE 8]><link rel="stylesheet" href="/assets/css/ie.css"><![endif]-->
-    <link rel="canonical" href="https://github.com/wlj459/blog/test-post/">
+    <link rel="canonical" href="https://github.com/wlj459/blog/jekyll%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E3%80%90%E7%AC%94%E8%AE%B0%E3%80%91/">
 
     <!-- Modernizr -->
     <script src="/assets/js/modernizr.custom.15390.js" type="text/javascript"></script>
@@ -71,26 +71,65 @@ ga('send', 'pageview');
       <div class="container">
          <div class="post">
   
-  <h1 class="postTitle">终于改完了</h1>
-  <p class="meta">May 03, 2015 | <span class="time">0</span> Minute Read</p>
+  <h1 class="postTitle">jekyll安装教程【笔记】</h1>
+  <p class="meta">May 06, 2015 | <span class="time">0</span> Minute Read</p>
   
-  <h1>终于改完了</h1>
+  <p>买了个服务器就想搭博客。鉴于后台狗的前端无能，只好找个模板来改改。偶然发现了jekyll的一个模板好棒，于是就进了jekyll的深坑。</p>
 
-<ul>
-<li>终于改完了</li>
-<li>改完了</li>
-<li>改完</li>
-<li>了</li>
-</ul>
+<h4>jekyll环境搭建</h4>
+
+<h5>第一步 安装RVM</h5>
+
+<p>$ curl -L https://get.rvm.io | bash -s stable</p>
+
+<p>检查安装</p>
+
+<p>$ rvm -v</p>
+
+<h5>第二步用RVM安装ruby</h5>
+
+<p>$ rvm install 2.0.0</p>
+
+<p>检查安装</p>
+
+<p>$ ruby -v</p>
+
+<p>$ gem -v</p>
+
+<h5>第三步利用gem安装jekyll（记得千万要用gem装）</h5>
+
+<p>更换gem源，防止被墙</p>
+
+<p>$ gem sources --remove http://rubygems.org/</p>
+
+<p>$ gem sources -a http://ruby.sdutlinux.org/</p>
+
+<p>$ gem sources -l</p>
+
+<p>请确保只有 ruby.sdutlinux.org</p>
+
+<p>安装</p>
+
+<p>$ gem install jekyll</p>
+
+<p>如果出现&quot;Unable to install gem - Failed to build gem native extension - cannot load such file&quot;</p>
+
+<p>sudo apt-get install ruby-dev</p>
+
+<h5>第四步安装NodeJS</h5>
+
+<p>$ sudo apt-get install nodejs</p>
+
+<h5><a href="http://www.zhanxin.info/jekyll/">找到的一个很好的jekyll入门教程</a></h5>
 
 
   <!-- POST NAVIGATION -->
   <div class="postNav clearfix">
+     
+      <a class="prev" href="/blog/test-post/"><span>&laquo;&nbsp;终于改完了</span>
       
+    </a>
       
-      <a class="next" href="/blog/jekyll%E5%AE%89%E8%A3%85%E6%95%99%E7%A8%8B%E3%80%90%E7%AC%94%E8%AE%B0%E3%80%91/"><span>jekyll安装教程【笔记】&nbsp;&raquo;</span>
-       
-      </a>
      
   </div>
 </div>

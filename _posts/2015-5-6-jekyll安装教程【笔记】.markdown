@@ -1,0 +1,56 @@
+---
+layout: post
+title:  "jekyll安装教程【笔记】" 
+date:   2015-5-6
+---
+买了个服务器就想搭博客。鉴于后台狗的前端无能，只好找个模板来改改。偶然发现了jekyll的一个模板好棒，于是就进了jekyll的深坑。
+
+#### jekyll环境搭建
+
+##### 第一步 安装RVM
+$ curl -L https://get.rvm.io | bash -s stable
+
+检查安装
+
+$ rvm -v
+
+##### 第二步用RVM安装ruby
+$ rvm install 2.0.0
+
+检查安装
+
+$ ruby -v
+
+$ gem -v
+
+##### 第三步利用gem安装jekyll（记得千万要用gem装）
+更换gem源，防止被墙
+
+$ gem sources --remove http://rubygems.org/
+
+$ gem sources -a http://ruby.sdutlinux.org/
+
+$ gem sources -l
+
+请确保只有 ruby.sdutlinux.org
+
+安装
+
+$ gem install jekyll
+
+如果出现"Unable to install gem - Failed to build gem native extension - cannot load such file"
+
+sudo apt-get install ruby-dev
+
+
+#####第四步安装NodeJS
+
+$ sudo apt-get install nodejs
+
+
+
+
+#####[找到的一个很好的jekyll入门教程](http://www.zhanxin.info/jekyll/)
+
+
+
