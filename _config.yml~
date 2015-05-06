@@ -1,0 +1,26 @@
+title: neko neko coin~
+description: =.=
+
+url: https://wlj459.github.io
+baseurl: ""
+BASE_PATH:/neko-neko-cion-
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
+
+markdown: redcarpet
+highlighter: pygments
+paginate: 2
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about.html
+ - title: Contact
+   url: /contact.html
+
+social:
+   github: wlj459
+   email: wlj459@gmail.com
+
+google_analytics: ""
