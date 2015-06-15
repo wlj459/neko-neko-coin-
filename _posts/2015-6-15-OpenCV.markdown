@@ -11,7 +11,7 @@ date:   2015-6-15
 
 从官网下载完了安装。经过一个看网速的下载过程，慢悠悠的安装完就开始配置了。
 
-######第一步：
+#####第一步：
 
 右击计算机->属性->高级系统设置->环境变量（右下角位置）
 然后在 系统变量 里面找到 Path（如果没有就新建）,  然后将“    ;E:\软件安装\opencv\opencv\build\x86\vc10\bin;    ” 拷贝进去（引号里面的路径，注意分号，好像不重启没差，然后看个人目录咯）
@@ -25,11 +25,11 @@ VS由于每个工程都要重新配置所以需要新建一个然后对于这个
 然后选中项目->"XXX"属性（最下面）->配置属性->VC++目录->包含目录（右边位置）。
 将这串目录拷贝进去：“ D:\软件安装\opencv\opencv\build\include\opencv2;D:\软件安装\opencv\opencv\build\include\opencv;D:\软件安装\opencv\opencv\build\include; ”
 
-######第三步：
+#####第三步：
 
 还是在该页面，库目录： “D:\软件安装\opencv\opencv\build\x86\vc10\lib ”  
 
-######第四步：
+#####第四步：
 
 点击 连接器->输入->附加依赖项（右边位置）
 将这串lib拷贝进去：
@@ -54,3 +54,7 @@ release模式和debug模式相同配置
 #####主要算法
 #####反色
 #####图层存储理解
+
+#####贴一堆参考资料：
+[win7 32/64bit VS2010 OpenCV 2.4.9 环境配置](http://blog.csdn.net/qingdujun/article/details/25163405)
+[【OpenCV入门指南】第一篇](http://blog.csdn.net/morewindows/article/details/8225783)
