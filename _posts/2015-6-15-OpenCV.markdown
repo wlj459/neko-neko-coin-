@@ -53,6 +53,7 @@ release模式和debug模式相同配置
 
 ######贴一堆参考资料：
 [win7 32/64bit VS2010 OpenCV 2.4.9 环境配置](http://blog.csdn.net/qingdujun/article/details/25163405)
+
 [【OpenCV入门指南】第一篇](http://blog.csdn.net/morewindows/article/details/8225783)
 
 
@@ -63,7 +64,45 @@ release模式和debug模式相同配置
 一晚上在折腾噪点问题，尝试怎么样处理的更好，试了很多方法，然后发现有些处理叠加起来其实效果并没有那么好。果然底层轮子没研究好就拿来用真实。。。
 
 关于脸部轮廓边框的处理暂时没有想到好的解决办法，最后就是投机取巧判断了一下像素点的亮度，然后对于边缘的黑色点就直接删掉了。其实只是在偷懒啊喂。感觉是一道略微复杂的图论呢。让我想想。。。。zzzzZZZ~
+
 #####反色
 
+说实话对于图层的理解很浅，很多都是照着葫芦画瓢，没有真正的理解。前期没有准备，回来就在忙着期末考试，也没有认真的回顾。说一下现在的理解以及吧之前看的那几个代码贴出来好了。
+
+前期的处理之后图层已经没有彩色了，现有的图像信息值应该是亮度？所以通过亮度的反转来达到反色的目的。
+
+[OpenCV -cvNot（反色）](http://blog.csdn.net/u011354290/article/details/9298537)
+
+[opencv二值图反色处理](http://blog.csdn.net/wsbeibei/article/details/25895101)
+
 #####图层存储理解
+
+这是当时想把白色部分搞透明，然后发现需要增加alpha通道。大半夜的看的云里雾里，迷迷糊糊的。把当时搜集到的东西贴这里，留着忙完期末回来填坑。
+
+#####贴点当时看的论文
+
+[图像轮廓提取方法研究](http://www.docin.com/p-221864048.html)
+
+[浅谈图像预处理对图像轮廓提取的影响](http://www.doc88.com/p-31489284386.html)
+
+[OpenCV教程](http://www.opencv.org.cn/opencvdoc/2.3.2/html/doc/tutorials/tutorials.html)
+
+[总结系列_5(opencv知识点,续...)](http://www.cnblogs.com/tornadomeet/archive/2012/05/14/2498713.html)
+
+[opencv图像的基本处理（灰度化、反色、二值化、膨胀、腐蚀以及ROI的copy等等）](http://blog.sina.com.cn/s/blog_8145d7e80102uz9p.html)
+
+[OpenCV参考手册之Mat类详解（三）](http://blog.csdn.net/giantchen547792075/article/details/9107877)
+
+[【OpenCV入门教程之三】 图像的载入，显示和输出 一站式完全解析](http://blog.csdn.net/poem_qianmo/article/details/20537737)
+
+[OPENCV 实现png绘制，alpha通道叠加。](http://blog.csdn.net/u013097499/article/details/30017739)
+
+[OPencv(4)----增加alpha通道 ](http://blog.sina.com.cn/s/blog_7c7b71530100u10x.html)
+
+[OpenCV中对Mat里面depth,dims,channels,step,data,elemSize和数据地址计算的理解 （转）](http://www.douban.com/note/265479171/)
+
+[OpenCV学习笔记（7）图像的通道（channels）问题](http://blog.csdn.net/chenyusiyuan/article/details/4662783)
+
+[Image](http://www.csie.ntnu.edu.tw/~u91029/Image.html)
+
 
